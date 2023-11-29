@@ -157,7 +157,7 @@ a:hover{
 }
 
 .about-content {
-  width: 80%; /* Ensure .about-content takes full height of .about-section */
+  /* width: 80%; Ensure .about-content takes full height of .about-section */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -213,7 +213,7 @@ span{
 }
 
 .container {
-  width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
   line-height: 1.5;
 }
