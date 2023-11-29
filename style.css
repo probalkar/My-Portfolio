@@ -120,7 +120,7 @@ canvas {
 
 .socials svg{
   margin: 0 5px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transform: scale(1);
   padding-left: 10px;
   padding-right: 10px;
@@ -129,6 +129,7 @@ canvas {
 .socials svg:hover{
   transform: scale(1.2);
   filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 1));
+  color: rgb(220, 220, 220);
 }
 
 p{
@@ -178,9 +179,10 @@ h1{
   padding: 20px;
 }
 
-span{
+.about-content span{
   font-size: 25px;
   text-align: justify;
+  color: rgb(180, 180, 180);
 }
 
 /* Style the particle container */
@@ -377,6 +379,11 @@ strong{
 .job a{
   text-decoration: underline;
   color: rgb(180, 180, 180);
+  transition: all 0.3s ease-in-out;
+}
+
+.job a:hover{
+  color: rgb(240, 240, 240);
 }
 
 .fade-in{
@@ -453,6 +460,11 @@ strong{
 .project a{
   font-size: 27px;
   text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+
+.project a:hover{
+  color: rgb(240, 240, 240);
 }
 
 .project b{
@@ -508,7 +520,7 @@ strong{
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
   margin-top: 20em;
-  margin-bottom: 20em;
+  margin-bottom: 15em;
 }
 
 .bottom-socials h2{
@@ -520,11 +532,33 @@ strong{
   margin-left: 30px;
   margin-right: 30px;
   color: rgb(190, 190, 190);
-  transition: transform 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .bottom-socials svg:hover{
   transform: scale(1.2);
+  color: whitesmoke;
+}
+
+.resume a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(190, 190, 190); /* Set your desired background color */
+  color: black; /* Set your desired text color */
+  text-decoration: none;
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 17px;
+  border-radius: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.resume a:hover{
+  transform: scale(1.2);
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9));
+  background-color: whitesmoke;
 }
 
 .fade-in{
