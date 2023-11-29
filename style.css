@@ -361,18 +361,23 @@ strong{
 
 .work-experience ol {
   font-size: 23px;
-  opacity: 75%;
+  opacity: 80%;
 }
 
 .work-experience b {
   font-size: 23px;
   line-height: 1.5;
-  opacity: 75%;
+  opacity: 80%;
 }
 
 .job span{
   font-size: 23px;
-  opacity: 70%;
+  opacity: 80%;
+}
+
+.job a{
+  text-decoration: underline;
+  color: rgb(180, 180, 180);
 }
 
 .fade-in{
@@ -449,7 +454,6 @@ strong{
 .project a{
   font-size: 27px;
   text-decoration: underline;
-  text-shadow: none;
 }
 
 .project b{
