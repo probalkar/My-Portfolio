@@ -124,6 +124,7 @@ canvas {
   transform: scale(1);
   padding-left: 10px;
   padding-right: 10px;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .socials svg:hover{
@@ -135,17 +136,6 @@ canvas {
 p{
   width: 300px;
   font-size: 0.75rem;
-}
-
-
-a {
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-}
-
-a:hover{
-  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9));
 }
 
 /* Update your existing CSS with the following changes */
@@ -376,14 +366,40 @@ strong{
   opacity: 80%;
 }
 
-.job a{
-  text-decoration: underline;
-  color: rgb(180, 180, 180);
-  transition: all 0.3s ease-in-out;
+.job a {
+  margin-top: 5px;
+  padding: 5px;
+  text-decoration: none;
+  position: relative;
 }
 
-.job a:hover{
-  color: rgb(240, 240, 240);
+.job a span{
+  font-size: 23px;
+  text-decoration: none;
+  position: relative;
+  color: rgb(190, 190, 190);
+  font-weight: 900;
+  transition: color 0.3s ease;
+}
+
+.job a::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,168,106,0.2), rgba(255,168,106,0.2));
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
+.job a:hover span {
+  color: #FFA86A; /* Change the text color back to original on hover */
+}
+
+.job a:hover::before {
+  width: 100%;
 }
 
 .fade-in{
@@ -457,14 +473,41 @@ strong{
   font-style: italic;
 }
 
-.project a{
-  font-size: 27px;
-  text-decoration: underline;
-  transition: all 0.3s ease-in-out;
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  text-decoration: none;
+  position: relative;
 }
 
-.project a:hover{
-  color: rgb(240, 240, 240);
+.project a span{
+  font-size: 27px;
+  text-decoration: none;
+  position: relative;
+  color: rgb(190, 190, 190);
+  font-weight: 900;
+  transition: color 0.3s ease;
+}
+
+.project a::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,168,106,0.2), rgba(255,168,106,0.2));
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
+.project a:hover span {
+  color: #FFA86A; /* Change the text color back to original on hover */
+}
+
+.project a:hover::before {
+  width: 100%;
 }
 
 .project b{
@@ -538,6 +581,11 @@ strong{
 .bottom-socials svg:hover{
   transform: scale(1.2);
   color: whitesmoke;
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 1));
+}
+
+.bottom-socials a{
+  text-decoration: none;
 }
 
 .resume a {
