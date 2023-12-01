@@ -285,6 +285,8 @@ particlesJS('particles-js', {
 requestAnimationFrame(animate);
 
 // Update your existing JavaScript file with the following code
+
+// Fade-in animation for About section
 const aboutSection = document.querySelector('.about-section');
 
 const observer1 = new IntersectionObserver(entries => {
@@ -295,10 +297,11 @@ const observer1 = new IntersectionObserver(entries => {
       entry.target.classList.remove('fade-in');
     }
   });
-}, { threshold: 0.5 });
+}, { threshold: 0.4 });
 
 observer1.observe(aboutSection);
 
+// Fade-in animation for Education section
 const educationSection = document.querySelector('.education-section');
 
 const observer2 = new IntersectionObserver(entries => {
@@ -309,10 +312,11 @@ const observer2 = new IntersectionObserver(entries => {
       entry.target.classList.remove('fade-in');
     }
   });
-}, { threshold: 0.5 });
+}, { threshold: 0.4 });
 
 observer2.observe(educationSection);
 
+// Fade-in animation for Certificates section
 const certificateSection = document.querySelector('.certificates-section');
 
 const observer3 = new IntersectionObserver(entries => {
@@ -323,10 +327,11 @@ const observer3 = new IntersectionObserver(entries => {
       entry.target.classList.remove('fade-in');
     }
   });
-}, { threshold: 0.2 });
+}, { threshold: 0.1 });
 
 observer3.observe(certificateSection);
 
+// Fade-in animation for Skills section
 const skillsSection = document.querySelector('.skills-section');
 
 const observer4 = new IntersectionObserver(entries => {
@@ -337,10 +342,11 @@ const observer4 = new IntersectionObserver(entries => {
       entry.target.classList.remove('fade-in');
     }
   });
-}, { threshold: 0.5 });
+}, { threshold: 0.4 });
 
 observer4.observe(skillsSection);
 
+// Fade-in animation for Work Experience
 const experienceSection = document.querySelector('.work-experience');
 
 const observer5 = new IntersectionObserver(entries => {
@@ -351,10 +357,11 @@ const observer5 = new IntersectionObserver(entries => {
       entry.target.classList.remove('fade-in');
     }
   });
-}, { threshold: 0.5 });
+}, { threshold: 0.3 });
 
 observer5.observe(experienceSection);
 
+// Fade-in animation for Organizations section
 const organizationSection = document.querySelector('.organizations');
 
 const observer6 = new IntersectionObserver(entries => {
@@ -365,10 +372,11 @@ const observer6 = new IntersectionObserver(entries => {
       entry.target.classList.remove('fade-in');
     }
   });
-}, { threshold: 0.5 });
+}, { threshold: 0.3 });
 
 observer6.observe(organizationSection);
 
+// Fade-in animation for Projects section
 const projectSection = document.querySelector('.projects');
 
 const observer7 = new IntersectionObserver(entries => {
@@ -379,10 +387,11 @@ const observer7 = new IntersectionObserver(entries => {
       entry.target.classList.remove('fade-in');
     }
   });
-}, { threshold: 0.2 });
+}, { threshold: 0.1 });
 
 observer7.observe(projectSection);
 
+// Fade-in animation for Hobbies section
 const hobbySection = document.querySelector('.hobbies');
 
 const observer8 = new IntersectionObserver(entries => {
@@ -393,10 +402,11 @@ const observer8 = new IntersectionObserver(entries => {
       entry.target.classList.remove('fade-in');
     }
   });
-}, { threshold: 0.7 });
+}, { threshold: 0.5 });
 
 observer8.observe(hobbySection);
 
+// Fade-in animation for bottom socials
 const bottomSocials = document.querySelector('.bottom-socials');
 
 const observer9 = new IntersectionObserver(entries => {
